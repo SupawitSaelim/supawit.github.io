@@ -1,9 +1,9 @@
-"""
-    test comment
-    supawit
+i = 'supawit'
+o = 'supawia'
 
-"""
+if i > o :
+    print(i, '>', o)
+else :
+    print(i, '<', o)
 
-#This also comment :)
-print('Hello world')
 
