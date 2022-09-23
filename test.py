@@ -1,13 +1,14 @@
-#numeric + numeric
-print(1 + 1)
+i = 5
+y = 5
+x = 'supawit'
 
-print(1.1 + 1.1)
+print(i is y)
+print(i is not y)
+print(y is x)
+print(y is not x)
 
-print(5*3)
 
-print(5**2)
 
-print('%d' %(5**2))
 
 
 
