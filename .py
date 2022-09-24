@@ -1,9 +1,16 @@
-print('\n\n\n')
+discount = 0.15
 
-i = input(" ")
-print(i.isalnum())
-print(i.isalpha())
+def input_sale():
+    i = int(input('Enter the price of the item: '))
+    return i
 
+def discount_sale(m):
+    d = m * discount
+    return d
 
+def main():
+    x = input_sale()
+    result = x - discount_sale(x) 
+    print('The price of the item is: %d' %(result))
 
-print('\n\n\n')
+main()
