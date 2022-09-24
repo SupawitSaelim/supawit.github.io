@@ -1,7 +1,8 @@
+university = 'King Monkut\'s University Of Technology North Bangkok(KMUTNB)'
+print(university.upper())
+print()
+print(university.lower())
+print()
 
-for i in range(15):
-    if i == 11:
-        continue
-    print(i, end=" ")
 
 
