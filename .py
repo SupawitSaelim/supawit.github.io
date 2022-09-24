@@ -1,16 +1,15 @@
-discount = 0.15
+from unittest import result
 
-def input_sale():
-    i = int(input('Enter the price of the item: '))
-    return i
-
-def discount_sale(m):
-    d = m * discount
-    return d
 
 def main():
-    x = input_sale()
-    result = x - discount_sale(x) 
-    print('The price of the item is: %d' %(result))
+    i = open('text.txt', 'r')
+    
+    readdata = i.readline()
+
+    while readdata != '':
+        print(readdata.rstrip('\n'))
+        readdata = i.readline()
 
 main()
+
+print('\n\n\n')

@@ -1011,8 +1011,70 @@
 							</ul>
 							<span class="image"><img src="lec6/write data.png" width="600"></span>
 							<span class="image"><img src="lec6/read data.png"  width="600"></span>
-							
-
+							<ul class="features">
+								<li><br><br>
+									<h3>TYPE OF FILE</h3>
+									1. Text file contains encoded as text.<br>
+									2. Binary file has not been converted to text.
+									Two ways to access data in a file:
+									1. Sequential access: read one item at a time, in order.
+									2. Direct access: jump to any item in the file.
+								</li>
+								<li>
+									<span class="image medium"><img src="https://media0.giphy.com/media/l1J9RFoDzCDrkqtEc/giphy.gif?cid=ecf05e47y6c21wqgdpqj8ll07y73lj77eiftvv6z61yz93iv&rid=giphy.gif&ct=g" width="400"></span>
+								</li>
+							</ul>
+							<h2>OPEN FILE</h2>
+							<p>
+								To open a file, we use the open function. The open function returns a file object.
+								file_variable = open(filename , mode) <br>
+								file mode is optional. If not specified, the default is read-only.<br>
+								'r' - read mode<br>
+								'w' - write mode<br>
+								'a' - append mode ,If the file does not exist, it is created.<br>
+							</p>
+							<span class="image"><img src="lec6/open.png" width="650"></span>
+							<h2><br><br>FILE WRITE</h2>
+							<span class="image"><img src="lec6/writefile.png" width="650"></span>
+							<span class="image"><img src="lec6/outwritefile.png" width="650"></span>
+							<h2><br><br>FILE READ</h2>
+							<span class="image"><img src="lec6/readfile.png" width="650"></span>
+							<span class="image"><img src="lec6/outreadfile.png" width="650"></span>
+							<h2><br><br>FILE READLINE</h2>
+							<p>
+								The readline method reads a single line from the file. Each time the method is called, it reads the next line in the file.
+							</p>
+							<span class="image"><img src="lec6/readline.png" width="600"></span>
+							<span class="image"><img src="lec6/outreadline.png" width="600"></span><br><br>
+							<h2><br>WRITE NUMBERS</h2>
+							<span class="image"><img src="lec6/writenumber.png" width="600"></span>
+							<span class="image"><img src="lec6/outputwritenumbers.png" width="600"></span>
+							<span class="image"><img src="lec6/textwritenumbers.png" width="600"></span><br><br>
+							<h2><br>READ NUMBERS</h2>
+							<span class="image"><img src="lec6/readnumbers.png" width="600"></span>
+							<span class="image"><img src="lec6/outreadnumbers.png" width="600"></span><br><br><br>
+							<span class="image medium"><img src="https://media2.giphy.com/media/u2pmTWUi0MXjyrMaVj/giphy.gif?cid=ecf05e47pks9tevl2m3s7fznpe3lxdvjg2b8pl39eotoih1n&rid=giphy.gif&ct=g" width="400"></span><br><br><br>
+							<h2><br>USING LOOP TO WRITE FILE</h2>
+							<P>
+								We can use a loop to read the lines in a file. The loop continues until the end of the file is reached.<b>(empty string is returned.)</b>
+							</P>
+							<span class="image"><img src="lec6/forwritefile.png" width="800"></span>
+							<span class="image"><img src="lec6/outforwritefile.png" width="800"></span>
+							<span class="image"><img src="lec6/textforwrite.png" width="800"></span>
+							<h2><br>USING LOOP TO READ FILE</h2>
+							<ul class="statistics">
+								<li class="style3">
+									<p>Use<strong> For</strong></p>
+								</li>
+								<li class="style4">
+									<p>Use<strong> While</strong></p>
+								</li>
+							</ul>
+							<span class="image"><img src="lec6/forread.png" width="550"></span>
+							<span class="image"><img src="lec6/whileread.png" width="550"></span>
+							<span class="image"><img src="lec6/outforread.png" width="550"></span>
+							<span class="image"><img src="lec6/outwhileread.png" width="550"></span><br><br><br>
+							<h2><br>PROCESSING RECORD</h2>
 
 
 
