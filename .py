@@ -1,19 +1,11 @@
 def main():
-    i = input('Enter file name to read: ')
+    counting_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,'supawit']
 
-    try:
-        fileread = open(i, 'r')
-        sum = 0
+    print(2 in counting_numbers)
+    print(11 in counting_numbers)
+    print('supawit' in counting_numbers)
 
-        for i in fileread:
-            sum += int(i)
-        fileread.close()
-    except Exception as e:
-        print(e)
-        exit()
-    else:
-        print(sum)
-    finally:
-        print('Done!!!')    
+    print(5 not in counting_numbers)
+    print(11 not in counting_numbers)
 
 main()
