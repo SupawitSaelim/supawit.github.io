@@ -1,11 +1,18 @@
+import matplotlib.pyplot as plt
+
 def main():
-    counting_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,'supawit']
+    x_axis = [1,2,3,4,5]
+    y_axis = [2,5,2,1,3]
 
-    print(2 in counting_numbers)
-    print(11 in counting_numbers)
-    print('supawit' in counting_numbers)
+    plt.plot(x_axis,y_axis,color='red')
+    plt.title('Sale of year')
+    plt.xlabel('Year')
+    plt.ylabel('Sale')
 
-    print(5 not in counting_numbers)
-    print(11 not in counting_numbers)
+    plt.yticks([1,2,3,4,5],['$1M','$2M','$3M','$4M','$5M'])
+    plt.xticks(x_axis,['2020','2021','2022','2023','2024'])
+
+    plt.grid(True)
+    plt.show()
 
 main()
