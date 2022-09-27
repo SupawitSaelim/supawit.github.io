@@ -439,12 +439,56 @@
 							<h3><br>Main Menu</h3>
 							<span class="image"><img src="lec7/menu.png" width="800"></span>
 							<span class="image medium"><img src="https://cdn.dribbble.com/users/2789762/screenshots/8630894/media/583b209224b027954cb6e8b9901cb731.gif"></span>
-
-
-
+							<h2>TUPLES</h2>
+							<ul class="features">
+								<li>
+									<p>
+										- A tuple is a collection which is ordered and unchangeable.<br>
+										- In Python tuples are written with round brackets.<br>
+										- Tuples are used to store multiple items in a single variable.<br>
+										- Tuples are immutable, which means that we cannot change the elements of a tuple once it is assigned.<br>
+										- Tuples are faster than lists.<br>
+										- If you have data that doesn't change, implementing it as tuple will guarantee that it remains write-protected.<br>
+									</p>
+								</li>
+								<li>
+									<p><br><br>
+										<span class="image"><img src="lec7/python-tuple.jpg" width="600"></span>
+									</p>
+								</li>
+							</ul>
+							<blockquote>
+								Tuples do not support the method: <br>append(), insert() <br>remove(), pop() <br>sort(), reverse() <br>clear()
+							</blockquote>
+							<h3><strong>
+								create empty tuple
+							</strong> shoud write  a comma behind value like this </h3>
+							<code>my_tuple = (1,)</code><br><br><br><br>
+							<ul class="statistics">
+								<li class="style1">
+									<h1><br>MATHPLOT<br></h1>
+								</li>
+							</ul>
+							<h2>Install Mathplot library</h2>
+							run this command in terminal<br><br>
+							<code>pip install matplotlib</code>
+							<br><h2><br><br>Example</h2>
+							<span class="image"><img src="lec7/mat 1.png" alt=""></span>
+							<span class="image"><br><br><img src="lec7/mat 2.png" alt="" width="850"></span>
+							<h2><br><br>Bar</h2>
+							<span class="image"><br><br><img src="lec7/mat 3.png" alt="" width="1000"></span>
+							<h2><br><br>Bar function has a color </h2>
+							<span class="image"><br><br><img src="lec7/color.png" alt="" width="1000"></span>
+							<span class="image"><br><br><img src="lec7/mat 4.png" alt="" width="1000"></span>
+							<span class="image"><br><br><img src="lec7/out mat4.png" alt="" width="1000"></span>
+							<h2><br><br>Last, Pie</h2>
+							<span class="image"><br><img src="lec7/pie.png" alt="" width="1000"></span>
+							<span class="image"><br><br><img src="lec7/outpie.png" alt="" width="1000"></span>
+							<h2><br><br>Goodluck!!</h2>
 							<footer class="major">
 								<ul class="actions special">
-									<li><a href="https://pynative.com/python/" class="button">Learn More</a></li>
+									<li><a href="https://pynative.com/python-lists/" class="button primary" target="_blank">Learn More List</a></li>
+									<li><a href="https://pynative.com/python-tuples/" class="button" target="_blank">Learn More Tuple</a></li>
 								</ul>
 							</footer>
 							</section>	
@@ -452,33 +496,36 @@
 							<section id="eight" class="main special">
 							<header class="major">
 								<h2>Lecture 8</h2>
-								<p><br> </p>
-								<span class="image main"><img src="" width="300"></span>
+								<p><br>Dictionnaires and set</p>
+								<span class="image main"><img src="https://media2.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif?cid=ecf05e47g6lqrh1pcmhurcab3f7t5uwsq7xjorpixrcg8h0q&rid=giphy.gif&ct=g" width="300"></span>
 							</header>
-							<ul class="statistics">
-								<li class="style1">
-									<span class="icon solid fa-code-branch"></span>
-									<strong>5,120</strong> Etiam
-								</li>
-								<li class="style2">
-									<span class="icon fa-folder-open"></span>
-									<strong>8,192</strong> Magna
-								</li>
-								<li class="style3">
-									<span class="icon solid fa-signal"></span>
-									<strong>2,048</strong> Tempus
-								</li>
-								<li class="style4">
-									<span class="icon solid fa-laptop"></span>
-									<strong>4,096</strong> Aliquam
-								</li>
-								<li class="style5">
-									<span class="icon fa-gem"></span>
-									<strong>1,024</strong> Nullam
-								</li>
-							</ul>
-							<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-							<footer class="major">
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>DICTIONARY</strong>
+									</li>
+								</ul> 
+								<blockquote>object that is used to store data values in key:value pairs.<br>key must be unique and of immutable data type such as strings, numbers, or tuples.<br>values can be any data type and are not necessarily unique.<br>Dictionary is mutable, meaning that we can change, add or remove items after it has been created.<br>Dictionary is an unordered collection of items. While other compound data types have only value as an element, a dictionary has a key: value pair.</blockquote>
+								
+								<span class="image main"><img src="lec8/dictionaries-in-python.jpg" width="600"></span>
+								<h2>Example</h2>
+								<span class="image"><img src="lec8/dict.png" width="750"></span>
+								<span class="image"><img src="lec8/outdict.png" width="1200"></span>
+								<br><br><br><h2><code>len()</code> function use count number of item in dictionary</h2><br>
+								<p>
+									To create empty dictionary, we can use <code>dict()</code> or <code>{}</code> function.<br>like <code>dict = dict() </code> <code>dict = {}</code>Use for loop to iterate over a dictionary.
+								</p>
+								<h2>Example</h2>
+								<span class="image"><img src="lec8/dict3.png" width="900"></span>
+								<span class="image"><img src="lec8/outdict3.png" width="900"></span>
+								<h2><br><br>SOME DICTIONARY METHOD</h2>
+								<span class="image"><br><img src="lec8/method.png" width="900"></span>
+								<h2><br><br>Example</h2>
+								<span class="image"><br><img src="lec8/dictmethod.png" width="900"></span>
+								<span class="image"><br><img src="lec8/outdictmethod.png" width="900"></span>
+
+
+							<footer>
 								<ul class="actions special">
 									<li><a href="https://pynative.com/python/" class="button">Learn More</a></li>
 								</ul>
