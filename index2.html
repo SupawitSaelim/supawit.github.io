@@ -523,11 +523,178 @@
 								<h2><br><br>Example</h2>
 								<span class="image"><br><img src="lec8/dictmethod.png" width="900"></span>
 								<span class="image"><br><img src="lec8/outdictmethod.png" width="900"></span>
-
-
+								<h2><br><br>ADD ITEMS TO THE DICTIONARY</h2>
+								We can add new items to the dictionary using the following two ways.
+								
+									Using key-value assignment: Using a simple assignment statement where value can be assigned directly to the new key.<br>
+									Using <code>update()</code> Method: In this method, the item passed inside the update() method will be inserted into the dictionary. The item can be another dictionary or any iterable like a tuple of key-value pairs.<br>
+								<span class="image"><br><img src="lec8/up.png" width="900"></span>
+								<span class="image"><br><img src="lec8/out up.png" width="900"></span>
+								<h2><br><br>SET DEFAULT VALUE TO A KEY</h2>
+								<br><blockquote>Using the <code>setdefault()</code> method default value can be assigned to a key in the dictionary. In case the key doesn’t exist already, then the key will be inserted into the dictionary, and the value becomes the default value, and None will be inserted if a value is not mentioned.
+									In case the key exists, then it will return the value of a key.</blockquote>
+								<span class="image"><img src="lec8/setde.png" alt="" width="900"></span>
+								<ul class="features">
+									<li><br><br>
+										As seen in the above example the value of the setdefault() method has no effect on the ‘country’ as the key already exists.
+									</li>
+									<li>
+										<blockquote>
+											<span class="image"><img src="lec8/out set.png"></span>
+										</blockquote>
+									</li>
+								</ul>
+								<h3><br>Try this example </h3>
+								<span class="image"><img src="lec8/dictexam.png" alt="" width="900"></span>
+								<span class="image"><br><img src="lec8/outdictexam.png" alt="" width="900"></span>
+								<span class="image main"><br><img src="lec8/load.gif" alt=""></span>
+								<h1>SET</h1>
+								<p>
+									Set is an unordered collection of data items that are unique.Python Set doesn’t maintain the order of elements, i.e., It is an unordered data set. So you cannot access elements by their index or perform insert operation using an index number.
+								</p>
+								<span class="image main"><img src="lec8/python-sets.jpg" alt="" width="900"></span>
+								<h2>CREATING A SET</h2>
+								<p>
+									We can create a set by using the <code>set()</code> function with an iterable object or a sequence by placing the sequence inside curly braces, separated by ‘comma’.
+								</p>
+								<h2>Example</h2>
+								<span class="image"><img src="lec8/set1.png" alt="" width="500"></span>
+								<span class="image"><img src="lec8/out set1.png" alt="" width="500"></span>
+								<p><br><br>
+									You will get error if you try to access items using index like <code>set[0]</code> because set is unordered collection of items.
+								</p>
+								<h2>see the example</h2>
+								<span class="image"><img src="lec8/set index.png" alt="" width="500"></span>
+								<span class="image"><img src="lec8/out set index.png" alt="" width="500"></span><br><br><br>
+								<h2>Union of set</h2>
+								<blockquote>
+									Union of two sets will return all the items present in both sets (all items will be present only once). This can be done with either the | operator or the union() method.
+									The following image shows the union operation of two sets A and B.
+								</blockquote>
+								<span class="image"><img src="lec8/python-set-union.jpg" alt="" width="400"></span>
+								<h2>Intersection of set</h2>
+								<blockquote>
+									The intersection of two sets will return only the common elements in both sets. The intersection can be done using the & operator and intersection() method.
+								</blockquote>
+								<span class="image"><img src="lec8/python-set-intersection.jpg" alt="" width="400"></span>
+								<h2>Difference of set</h2>
+								<blockquote>
+									The difference operation will return the items that are present only in the first set i.e the set on which the method is called. This can be done with the help of the - operator or the difference() method.
+								</blockquote>
+								<span class="image"><img src="lec8/python-set-differance.jpg" alt="" width="400"></span>
+								<h2>Symmetric Difference of set</h2>
+								<blockquote>
+									The Symmetric difference operation returns the elements that are unique in both sets. This is the opposite of the intersection. This is performed using the ^ operator or by using the symmetric_difference() method.
+								</blockquote>
+								<span class="image"><img src="lec8/python-set-symmetric-difference.jpg" alt="" width="400"></span>
+								<h2><br>Method of set</h2>
+								<div class="table-wrapper">
+									<table>
+										<tbody>
+											<tr>
+												<td><code>len()</code></td>
+												<td>Return the length (the number of items) in the set.</td>
+											</tr>
+											<tr>
+												<td><code>add()</code></td>
+												<td>Add an element to a set. If the element is already present, it doesn’t add any element.</td>
+											</tr>
+											<tr>
+												<td><code>update()</code></td>
+												<td>Add all elements of a list, tuple, set, or dictionary to another set. It doesn’t add any duplicate element.</td>
+											</tr>
+											<tr>
+												<td><code>remove(),discard()</code></td>
+												<td>Remove an item from a set. If the item is not present in the set, it raises an error.Discard method doesn’t raise an error if the item is not present in the set.</td>
+											</tr>
+											<tr>
+												<td><code>clear()</code></td>
+												<td>Remove all items from the set.</td>
+											</tr>
+											<tr>
+												<td><code>union() or | </code></td>
+												<td>Union of A and B is a set of all elements from both sets. If there are duplicate elements, they appear only once in the result.</td>
+											</tr>
+											<tr>
+												<td><code>intersection or &</code></td>
+												<td>Intersection of A and B is a set of elements that are common in both the sets. If there are duplicate elements, they appear only once in the result.</td>
+											</tr>
+											<tr>
+												<td><code>difference or -</code></td>
+												<td>Difference of A and B (A-B) is a set of elements that are only in A but not in B. If there are duplicate elements, they appear only once in the result.</td>
+											</tr>
+											<tr>
+												<td><code>synmmetric_difference() or ^ </code></td>
+												<td>Symmetric Difference of A and B is a set of elements in both A and B except those that are common in both.</td>
+											</tr>
+											<tr>
+												<td><code>issubset() or <= </code></td>
+												<td>Test whether every element in the set A is in the set B.</td>
+											</tr>
+											<tr>
+												<td><code>issuperset() or >= </code></td>
+												<td>Test whether every element in the set B is in the set A.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							<h2><br><br>Example</h2>
+							<span class="image"><img src="lec8/set01.png" alt="" width="500"></span>
+							<span class="image"><img src="lec8/outset01.png" alt="" width="500"></span><br>
+							<span class="image"><img src="lec8/set02.png" alt="" width="500"></span>
+							<span class="image"><img src="lec8/outset02.png" alt="" width="500"></span><br>
+							<span class="image"><img src="lec8/set03.png" alt="" width="500"></span>
+							<span class="image"><img src="lec8/outset03.png" alt="" width="500"></span><br>
+							<span class="image"><img src="lec8/set04.png" alt="" width="500"></span>
+							<span class="image"><img src="lec8/outset04.png" alt="" width="500"></span><br>
+							<span class="image"><br><br><img src="lec8/load1.gif" alt="" width="900"></span>
+							<h1><br><br><br>SERAILIZING OBJECT</h1>
+							<blockquote>
+								<p>Serializing an object means to convert its state to a byte stream so that the byte stream can be reverted back into a copy of the object. Deserializing an object means to convert the byte stream back into a copy of the object.
+									<br>Pickle module implements binary protocols for serializing and de-serializing a Python object structure. “Pickling” is the process whereby a Python object hierarchy is converted into a byte stream, and “unpickling” is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back into an object hierarchy.
+								</p>
+							</blockquote>
+							<span class="image"><img src="lec8/python-pickle-800x200.png" alt="" width="500"></span><br><br>
+							<ul class="features">
+								<li>
+									<h2>Step to pickle an object</h2>
+									<p>
+										1. Import pickle module<br>
+										2. Open a file, where you want to store the data<br>
+										3. Put data into the file<br>
+										4. Close the file<br>
+									</p>
+								</li>
+								<li>
+									<h2>Step to unpickle an object</h2>
+									<p>
+										1. Import pickle module<br>
+										2. Open the file for reading<br>
+										3. Read the data from the file<br>
+										4. Close the file<br>
+									</p>
+							</ul>
+							<h2><br><br>Example to Pickle</h2>
+							<span class="image"><img src="lec8/pickle.png" alt="" width="800"></span>
+							<ul class="features">
+								<li>
+									<span class="image"><img src="lec8/outpickle.png" alt="" width="600"></span>
+								</li>
+								<li>
+									<span class="image"><br><img src="lec8/dat.png" alt="" width="300"></span>
+								</li>
+							</ul>
+							<h2><br><br>Example to Unpickle</h2>
+							<span class="image"><img src="lec8/unpickle.png" alt="" width="800"></span>
+							<span class="image"><img src="lec8/outunpickle.png" alt="" width="800"></span>
+							<h1><br><br>Finish Lecture 8</h1>
+							<h2>Thank you</h2>
+							<span class="image main"><br><img src="lec8/python.gif" alt="" ></span>
 							<footer>
 								<ul class="actions special">
-									<li><a href="https://pynative.com/python/" class="button">Learn More</a></li>
+									<li><a href="https://pynative.com/python-dictionaries/" class="button primary" target="_blank">Learn More dictionary</a></li>
+									<li><a href="https://pynative.com/python-sets/" class="button " target="_blank">Learn More set</a></li><br>
+									<li><a href="https://docs.python.org/3/library/pickle.html" class="button primary fit" target="_blank">Learn More pickle</a></li>
 								</ul>
 							</footer>
 							</section>	
