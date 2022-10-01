@@ -32,8 +32,12 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li><a href="#four" class="active">Lecture 4</a></li>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="#intro" class="active">INTRODUCTION</a></li>
+				<li><a href="#index" class="active">STRING INDEXING</a></li>
+				<li><a href="#slicing" class="active">STRING SLICING</a></li>
+				<li><a href="#format" class="active">STRING FORMATTING</a></li>
+				<li><a href="#function" class="active">FUNCTION WITH STR</a></li>
+				<li><a href="#method" class="active">STRING BOOLEAN METHOD</a></li>
 				<li><a href="#footer">Contact me</a></li>
 			</ul>
 		</nav>
@@ -41,13 +45,11 @@
 		<!-- Main -->
 		<div id="main">
 			<!--Lecture 4-->
-			<section id="four" class="main special">
+			<section id="intro" class="main special">
 				<header class="major">
 					<h2>Lecture 4</h2>
 					<p>String </p>
-					<span class="image main"><img
-							src="https://cdn.dribbble.com/users/891406/screenshots/2515975/media/e75cb0262fb5aa6d6548dd167881cca2.gif?fbclid=IwAR2CGfcdgNnB0BZG8FcqU0rCSHxXTKExdIIFvtoBUKUO9TAEimL49DsD6I8"
-							width="300"></span>
+					<span class="image main"><img src="lec4/e75cb0262fb5aa6d6548dd167881cca2.gif" width="300"></span>
 				</header>
 				<ul class="statistics">
 					<li class="style1">
@@ -64,33 +66,41 @@
 					</li>
 					<li class="style4">
 						<span class="icon solid fa-laptop"></span>
-						<strong><br>len(),string()</strong>
+						<strong><br>function with string</strong>
 					</li>
 					<li class="style5">
 						<span class="icon fa-gem"></span>
 						<strong>String Boolean Method</strong>
 					</li>
 				</ul>
-				<h1><br>Muliply Input with map function</h1>
+				<h2><br>Muliply Input with map function <img src="lec4/5205319.png" width="50" alt=""> </h2>
 				<br>
 				<span class="image"><img src="lec4/map.png" width="500"></span>
 				<span class="image"><img src="lec4/output map.png" width="500"></span>
 				<h1><br>String</h1>
-				<p>surrouned by single or double quotes like 'hello' or "hello"</p>
+				<blockquote>
+					In Python, A string is a sequence of characters enclosed within a single quote or double quote. These characters could be anything like letters, numbers, or special symbols enclosed within double quotation marks. For example, <code>'supawit'</code>or <code>"supawit"</code> is a string.
+				</blockquote>
 				<h2>Using quotes within string</h2>
 				<span class="image"><img src="lec4/tence.png" width="500"></span>
 				<span class="image"><img src="lec4/out tence.png" width="500"></span>
-				<h1><br>String indexing</h1>
+			</section>
+			<section id="index" class="main special">
+				<h1><br>String indexing <img src="lec4/54410.png" width="50" alt=""> </h1>
 				<p>Indexing is used to access the characters of a string. Indexing starts from 0 from left to right and
 					-1 from right to left.</p>
 				<span class="image"><img
-						src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/learn-about-strings-in-python/Images/Capture.PNG"
+						src="lec4/Capture.png"
 						width="900"></span>
 				<span class="image"><img src="lec4/outindex1.png" width="500"></span>
 				<span class="image"><img src="lec4/index1.png" width="500"></span>
-				<p><br>String are <strong>immutable</strong> in python once they are created they cannot be changed some
-					operations such as concatenation.but in reallity they do not.</p>
+				<blockquote>
+					<p><br>String are <strong>immutable</strong> in python once they are created they cannot be changed some
+						operations such as concatenation.but in reallity they do not.</p>
+				</blockquote>
 				<span class="image"><img src="lec4/string immutable.png" width="500"></span><br><br>
+			</section>
+			<section id="slicing" class="main special">
 				<ul class="features">
 					<li class="features">
 						<span class="image"><br><img src="lec4/sli.png"></span>
@@ -98,20 +108,23 @@
 					</li>
 					<li class="features">
 						<h2><br><br>String slicing</h2>
-						<p>Slicing is used to access the substring of a string. Slicing starts from 0 from left to right
-							and -1 from right to left.</p>
+						<blockquote>
+							<p>String slicing is used to access the substring of a string. It is done by specifying the start
+								and end index of the substring separated by a colon. The start index is included and the end
+								index is excluded.</p>
+						</blockquote>
 						<span class="image"><img src="lec4/slicing1.png"></span>
 				</ul>
-				<h2>Excercise</h2>
+				<h2>Example</h2>
 				<span class="image medium"><img src="lec4/ex1sli.png"></span>
 				<span class="image medium"><img src="lec4/outex1sli.png"></span>
-				<span class="image"><br><img src="lec4/ex.1.png" width="350"></span><br><br>
+				<span class="image"><br><img src="lec4/ex.1.png" width="350"></span><br><br><br><br>
 				<ul class="statistics">
 					<li class="style4">
-						<h1><br>FUNCTION LEN()</h1>
+						<h2 style="color:whitesmoke" ><br>FUNCTION LEN() <img src="lec4/781008.png" width="50" alt=""></h2>
 					</li>
 				</ul>
-				<p>len() function is used to find the length of a string.</p>
+				<p><code>len()</code> function is used to find the length of a string.</p>
 				<span class="image"><img src="lec4/len.png" width="500"></span>
 				<span class="image"><img src="lec4/out len.png" width="500"></span>
 				<br>
@@ -120,16 +133,16 @@
 				<span class="image"><img src="lec4/while len.png" width="500"></span>
 				<span class="image"><img src="lec4/out while len.png" width="500"></span><br><br><br>
 				<ul class="statistics">
-					<li class="style5">
-						<h1><br>FUNCTION LOWER(),UPPER(),FORMAT()</h1>
+					<li class="style2">
+						<h2 style="color:whitesmoke" ><br>FUNCTION LOWER(),UPPER(),FORMAT() <img src="lec4/781008.png" width="50" alt=""> </h2>
 					</li>
 				</ul>
 				<p>
-					<strong>lower()</strong> function is used to convert the string into lower case.
+					<code>lower()</code> function is used to convert the string into lower case.
 					<br>
-					<strong>upper()</strong> function is used to convert the string into upper case.
+					<code>upper()</code> function is used to convert the string into upper case.
 					<br>
-					<strong>format()</strong> function is used to format the string.
+					<code>format()</code> function is used to format the string.
 				</p>
 				<span class="image main"><img src="lec4/lower upper.png" width="500"></span>
 				<span class="image main"><img src="lec4/out lower upper.png" width="500"></span>
@@ -148,6 +161,8 @@
 				<span class="image"><img src="lec4/con4.png" width="500"></span>
 				<span class="image"><img src="lec4/outcon4.png" width="500"></span>
 				<br>
+			</section>
+			<section id="format" class="main special">
 				<h1><br>FORMATTING STRING</h1>
 				<p>Formatting string is used to format the string.</p>
 				<span class="image"><img src="lec4/format1.png" width="600"></span>
@@ -160,60 +175,76 @@
 				<span class="image"><img src="lec4/outfor4.png" width="600"></span>
 				<span class="image"><img src="lec4/format5.png" width="600"></span>
 				<span class="image"><img src="lec4/outfor5.png" width="600"></span>
-				<span class="image circle"><br><img
-						src="https://media2.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif?cid=ecf05e477z3t2dev7h1g7zofh0fomefsj9g87hz7tae0bs91&rid=giphy.gif&ct=g"
-						width="600"></span>
+				<span class="image circle"><br><img src="lec4/200w_s.gif" width="600"></span>
+			</section>
+			<section id="function" class="main special">
 				<h2><br>"JOIN"</h2>
-				<p>join() function is used to join the string.</p>
+				<p><code>join()</code> function is used to join the string.</p>
 				<span class="image"><img src="lec4/join1.png" width="600"></span>
 				<span class="image"><img src="lec4/outjoin1.png" width="600"></span>
 				<h2><br>"SPLIT"</h2>
-				<p>split() function is used to split the string.</p>
+				<p><code>split()</code> function is used to split the string.</p>
 				<span class="image"><img src="lec4/split.png" width="600"></span>
 				<span class="image"><img src="lec4/outsplit.png" width="600"></span>
 				<span class="image"><img src="lec4/split calendar.png" width="600"></span>
 				<span class="image"><img src="lec4/outsplitcalendar.png" width="600"></span>
 				<h2><br>"STRIP"</h2>
-				<p>strip() function is used to remove the white space from the string.</p>
+				<p><code>strip()</code> function is used to remove the white space from the string.</p>
 				<ul class="features">
 					<li>
 						<p>
-							<strong>lstrip()</strong> function is used to remove the white space from the left side of
+							<strong><code>lstrip()</code></strong> function is used to remove the white space from the left side of
 							the string.
-							<br>
+							<br><br>
 							<span class="image"><img src="lec4/lstip.png" width="450"></span>
 							<span class="image"><img src="lec4/outlstrip.png" width="450"></span>
 						</p>
 					</li>
 					<li>
 						<p>
-							<strong>rstrip()</strong> function is used to remove the white space from the right side of
+							<strong><code>rstrip()</code></strong> function is used to remove the white space from the right side of
 							the string.
-							<br>
+							<br><br>
 							<span class="image"><img src="lec4/rstrip.png" width="450"></span>
 							<span class="image"><img src="lec4/outrstrip.png" width="450"></span>
 						</p>
 					</li>
 					<li>
 						<p>
-							<strong>strip()</strong> function is used to remove the white space from both side of the
+							<strong><code>strip()</code></strong> function is used to remove the white space from both side of the
 							string.See the example below.
-							<br>
+							<br><br>
 							<span class="image"><img src="lec4/strip.png" width="450"></span>
 							<span class="image"><img src="lec4/outstrip.png" width="450"></span>
 						</p>
 				</ul>
-				<h1><br>SEARCH AND REPLACE</h1>
+				<h2>"TITLE"</h2>
+				<p><code>title()</code> function is used to convert the first letter of the word into capital letter.</p>
+				<span class="image"><img src="lec4/titile.png" width="600"></span>
+				<span class="image"><img src="lec4/outtile.png" width="600"></span><br><br><br>
+				<h2>"CAPITALIZE"</h2>
+				<ul class="features">
+						<li><blockquote>
+							<br><br>
+							<code>Capitalize()</code> function is used to convert the first letter of the string into capital letter.
+						</blockquote>
+						</li>
+						<li>
+							<span class="image"><img src="lec4/capital.png" width="600"></span>
+							<span class="image"><img src="lec4/outcap.png" width="600"></span>
+						</li>
+				</ul> 
+				<h1><br>SEARCH AND REPLACE <img src="lec4/3905267.png" width="50" alt=""> </h1>
 				<ul class="features">
 					<li>
 						<p>
-							<strong>endswith() </strong>function is used to check whether the string ends with the given
+							<code>endswith()</code> function is used to check whether the string ends with the given
 							string or not.return true if the string ends with the given string otherwise false.
 						</p>
 					</li>
 					<li>
 						<p>
-							<strong>startswith()</strong> function is used to check whether the string starts with the
+							<code>startswith()</code> function is used to check whether the string starts with the
 							given string or not.return true if the string starts with the given string otherwise false.
 						</p>
 					</li>
@@ -225,13 +256,13 @@
 				<ul class="features">
 					<li>
 						<p><br>
-							<strong>find()</strong> function is used to find the index of the given string in the given
+							<code>find()</code> function is used to find the index of the given string in the given
 							string.return -1 if the given string is not found in the given string.
 						</p>
 					</li>
 					<li>
 						<p><br>
-							<strong>replace()</strong> function is used to replace the given string with the given
+							<code>replace()</code> function is used to replace the given string with the given
 							string. replace(old,new)
 						</p>
 					</li>
@@ -243,7 +274,9 @@
 				<h2><br> Example</h2>
 				<span class="image main"><img src="lec4/example.png"></span>
 				<span class="image main"><img src="lec4/outexample.png"></span>
-				<h1><br>STRING BOOLEAN METHOD</h1>
+			</section>
+			<section id="method" class="main special">
+				<h1><br>STRING BOOLEAN METHOD <img src="lec4/1743956.png" width="50" alt=""> </h1>
 				<span class="image main"><img src="lec4/boolean method.png"></span>
 				<h2><br>For Example</h2>
 				<span class="image medium"><img src="lec4/boolean 1.png"></span>
@@ -257,7 +290,7 @@
 				<span class="image main"><img src="lec4/outex3.png"></span>
 				<footer class="major">
 					<ul class="actions special">
-						<li><a href="https://pynative.com/python/" class="button primary" target="_blank">Learn More</a></li>
+						<li><a href="https://pynative.com/python-data-types/#h-str-data-type" class="button primary" target="_blank">Learn More String</a></li>
 					</ul>
 				</footer>
 			</section>
