@@ -28,8 +28,11 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#seven" class="active">Lecture 7</a></li>
-                            <li><a href="index.html">Home</a></li>
+							<li><a href="#intro" class="active">INTRODUCTION</a></li>
+                            <li><a href="#list">LIST</a></li>
+                            <li><a href="#method">LIST METHODS</a></li>
+                            <li><a href="#tuple">TUPLE</a></li>
+                            <li><a href="#mathplot">MATHPLOT</a></li>
                             <li><a href="#footer">Contact me</a></li>
 						</ul>
 					</nav>
@@ -37,19 +40,18 @@
 				<!-- Main -->
 					<div id="main">
 						<!--Lecture 7-->
-							<section id="seven" class="main special">
+							<section id="intro" class="main special">
 							<header class="major">
 								<h2>Lecture 7</h2>
-								<h3><br>List<h3>
-								<span class="image main"><img src="https://i.pinimg.com/originals/00/6b/27/006b2787627b0b67bb91d9716d6e5058.gif" width="300"></span>
-							</header>
-							<h2>Sequence type.</h2>
+								<span class="image main"><img src="lec7/006b2787627b0b67bb91d9716d6e5058.gif" width="300"></span>
+							</header><br><br>
+							<h1>Sequence type.</h1>
 							<ul class="statistics">
 								<li class="style4">
-									<h1>List</h1>
+									<br><h1 style="color:whitesmoke" >List</h1>
 								</li>
 								<li class="style5">
-									<h1>Tuple</h1>
+									<br><h1 style="color:whitesmoke" >Tuple</h1>
 								</li>
 							</ul>
 							<ul class="features">
@@ -60,77 +62,110 @@
 									<p>Tuple is a collection which is ordered and unchangeable. Allows duplicate members.tuple is immutable.</p>
 								</li>
 							</ul>
-							<span class="image"><img src="https://pynative.com/wp-content/uploads/2021/03/python-list.jpg" width="500"></span>
-							<span class="image"><img src="https://pynative.com/wp-content/uploads/2021/02/python-tuple.jpg" width="500"></span>
+							<span class="image"><img src="lec7/python-list.jpg" width="500"></span>
+							<span class="image"><img src="lec7/python-tuple.jpg" width="500"></span>
+							</section>
+							<section id="list" class="main special">
 							<h2><br>LIST</h2>
-							<p>A list is an object that contains multiple data items. Lists
-								are mutable, which means that their contents can be
-								changed.Lists are dynamic data structures.item can be added or removed from the list.use square brackets to create a list or use the <strong>list()</strong> function.</p>
+							<blockquote>
+								<p>A list is an object that contains multiple data items. Lists
+									are mutable, which means that their contents can be
+									changed.Lists are dynamic data structures.item can be added or removed from the list.use square brackets to create a list or use the <code>list()</code> function.</p>
+							</blockquote>
+							<h2>Create list in Python</h2>
+							
+								The list can be created using either the list constructor or using square brackets [ ].
+								Using <code>list()</code> constructor: In general, the constructor of a class has its class name. Similarly, Create a list by passing the comma-separated values inside the list().
+								Using square bracket <code>([])</code>: In this method, we can create a list simply by enclosing the items inside the square brackets.
+							
 							<h3><strong>Example</strong></h3>
-							<span class="image"><img src="lec7/list1.png" width="700"></span>
-							<span class="image"><img src="lec7/outlist1.png"width="700"></span>
+							<span class="image"><img src="lec7/type list.png" width="500"></span>
+							<span class="image"><img src="lec7/out type list.png" width="500"></span>
+							<span class="image"><img src="lec7/list1.png" width="500"></span>
+							<span class="image"><img src="lec7/outlist1.png"width="500"></span>
 							<h2><br>LIST WITH OPERATIONS</h2>
-							<P>
-								Repeatition operators can use copy the list.<strong>list * n(n is integer)</strong> or <strong>list * list</strong> can use to concatenate the list.<br>
-								You can iterate through the list using <strong>for loop.</strong><br>
-							</P>
+							<blockquote>
+								<P>
+									Repeatition operators can use copy the list. <code>list * n(n is integer)</code> or <code>list + list</code><br> can use to concatenate the list.<br>
+								</P>
+							</blockquote>
 							<h3><strong>Example</strong></h3>
-							<span class="image"><img src="lec7/findmaxlist.png" width="700"></span>
-							<span class="image"><img src="lec7/outfindmaxlist.png" width="700"></span>
-							<p><br><br>
-								So,you can use function <strong>max()</strong> to find the maximum value in the list.<br>
-								or fucntion <strong>min()</strong> to find the minimum value in the list.<br>
-							</p>
-							<h3><strong>Example</strong></h3>
-							<span class="image"><img src="lec7/funtionminmax.png" width="700"></span>
-							<span class="image"><img src="lec7/outfuntionminmax.png" width="700"></span>
-							<h3><strong><br><br><br>Example Program</strong></h3>
+							<span class="image"><img src="lec7/*list.png" width="500"></span>
+							<span class="image"><img src="lec7/out*list.png" width="600"></span>
+							<h3><br><br>You can iterate through the list using <strong>for loop.</strong> <img src="lec7/2546705.png" width="50" alt=""> <br></h3>
+							<br><br>
+							<span class="image"><img src="lec7/findmaxlist.png" width="550"></span>
+							<span class="image"><img src="lec7/outfindmaxlist.png" width="550"></span><br>
+							<br><blockquote>
+								<h4><br><br>
+									you can use function <code>max()</code> to find the maximum value in the list.
+									or fucntion <code>min()</code> to find the minimum value in the list.<br>
+								</h4>
+							</blockquote>
+							<span class="image"><img src="lec7/funtionminmax.png" width="550"></span>
+							<span class="image"><img src="lec7/outfuntionminmax.png" width="550"></span><br><br><br>
+							<ul class="features">
+								<li>
+									<p><br><br><br><br>use function <code>sum()</code> to find the sum of the list.</p>
+									<p>use function <code>len()</code> to find the length of the list.</p>
+								</li>
+								<li >
+									<sapn class="image"><img src="lec7/sum.png" width="450"></span><br>
+									<sapn class="image"><img src="lec7/outsum.png" width="450"></span>
+								</li>
+							</ul>
+							<h3><br><br>Example Program</h3>
 							<span class="image"><img src="lec7/listprogram.png" width="900"></span>
 							<span class="image"><img src="lec7/outlistprogram.png" width="900"></span><br><br><br>
+							<br><br>
+							</section>
+							<section id="method" class="main special">
 							<ul class="statistics">
 								<li class="style2">
-									<h1><br>LIST METHODS BUILT-IN FUNCTIONS</h1>					
+									<h2 style="color:whitesmoke "><br>LIST METHODS BUILT-IN FUNCTIONS <img src="lec7/4838808.png" width="50" alt=""> </h2>					
 								</li>
 							</ul>
 							<p>
 								- IndexError exception is raised if the index is out of range.<br>
 								- The index of last elements for loop we can use <strong>len()-1</strong> function.<br>
 							</p>
+							<span class="image"><img src="lec7/positive-and-negative-indexing.jpg" width="800"></span>
 							<span class="image"><img src="lec7/listgeneral.png" width="1000"></span>
 							<span class="image"><img src="lec7/outlistgeneral.png" width="1000"></span><br><br><br>
 							<ul class="statistics">
 								<li class="style1">
-									<h2>Use the operator <strong>in</strong> to check whether an item is in the list.return True or False.</h2>
+									<h2 style="color:whitesmoke" >Use the operator <strong>in</strong> to check whether an item is in the list.return True or False.</h2>
 								</li>
 								<li class="style3">
-									<h2>Use the operator <strong>not in</strong> to check whether an item is not in the list.return True or False.</h2>
+									<h2 style="color:whitesmoke">Use the operator <strong>not in</strong> to check whether an item is not in the list.return True or False.</h2>
 								</li>
 							</ul>
 							<span class="image"><img src="lec7/innotin.png" width="850"></span>
 							<span class="image"><img src="lec7/outinnotin.png" width="850"></span><br><br><br>
 							<ul class="statistics">
 								<li class="style1">
-									<h6>Use the function <strong>append()</strong> to add an item to the end of the list.</h6>
+									<h6 style="color:whitesmoke">Use the function <strong>append()</strong> to add an item to the end of the list.</h6>
 								</li>
 								<li class="style2">
-									<h6>Use the function <strong>index()</strong> determine where an item is located in a list.</h2>
+									<h6 style="color:whitesmoke">Use the function <strong>index()</strong> determine where an item is located in a list.</h2>
 								</li>
 								<li class="style3">
-									<h6>Use the function <strong>insert()</strong> to add an item at a specific location in the list.</h2>
+									<h6 style="color:whitesmoke">Use the function <strong>insert()</strong> to add an item at a specific location in the list.</h2>
 								</li>
 								<li class="style4">
-									<h6>Use the function <strong>sort()</strong> to sort the items in the list.</h2>
+									<h6 style="color:whitesmoke">Use the function <strong>sort()</strong> to sort the items in the list.</h2>
 								</li>
 								<li class="style5">
-									<h6>Use the function <strong>remove()</strong> to remove an item from the list.</h2>
+									<h6 style="color:whitesmoke">Use the function <strong>remove()</strong> to remove an item from the list.</h2>
 								</li>
 								<li class="style3">
-									<h6>Use the function <strong>reverse()</strong> to reverse the order of the items in the list.</h2>
+									<h6 style="color:whitesmoke">Use the function <strong>reverse()</strong> to reverse the order of the items in the list.</h2>
 								</li>
 							</ul>
 							<span class="image"><img src="lec7/method.png "width="850"></span>
 							<span class="image"><img src="lec7/outmethod.png "width="850"></span>
 							<h2><br><br>LET BUILD PROGRAM HERO!</h2>
+							<span class="image"><img src="lec7/663083.png" width="100"></span>
 							<h3><br>1.Display Heroes</h3>
 							<span class="image"><img src="lec7/displayheroes.png" width="800"></span>
 							<h3><br>2.Add Heroes</h3>
@@ -150,7 +185,10 @@
 							<span class="image"><img src="lec7/manyname1.png" width="800"></span>
 							<h3><br>Main Menu</h3>
 							<span class="image"><img src="lec7/menu.png" width="800"></span>
-							<span class="image medium"><img src="https://cdn.dribbble.com/users/2789762/screenshots/8630894/media/583b209224b027954cb6e8b9901cb731.gif"></span>
+							<span class="image medium"><img src="lec7/image_processing20191129-26734-6lp0s5.gif"></span>
+							<br><br>
+							</section>
+							<section id = "tuple" class="main special">
 							<h2>TUPLES</h2>
 							<ul class="features">
 								<li>
@@ -169,16 +207,23 @@
 									</p>
 								</li>
 							</ul>
-							<blockquote>
+							<blockquote style="color:rgb(255, 100, 100)">
 								Tuples do not support the method: <br>append(), insert() <br>remove(), pop() <br>sort(), reverse() <br>clear()
 							</blockquote>
 							<h3><strong>
 								create empty tuple
 							</strong> shoud write  a comma behind value like this </h3>
 							<code>my_tuple = (1,)</code><br><br><br><br>
+							<h2>Packing and Unpacking</h2>
+							<blockquote>A tuple can also be created without using a <code>tuple()</code> constructor or enclosing the items inside the parentheses. It is called the variable “Packing.”
+								In Python, we can create a tuple by packing a group of variables. Packing can be used when we want to collect multiple values in a single variable. Generally, this operation is referred to as tuple packing.</blockquote>
+							<span class="image"><img src="lec7/pack.png" width="800"></span>
+							<span class="image"><img src="lec7/out pack.png" width="285"></span>
+							</section>
+							<section id = "mathplot" class="main special">
 							<ul class="statistics">
 								<li class="style1">
-									<h1><br>MATHPLOT<br></h1>
+									<h1 style="color:whitesmoke"><br>MATHPLOT <img src="lec7/3320937.png" width="50" alt=""> <br></h1>
 								</li>
 							</ul>
 							<h2>Install Mathplot library</h2>
@@ -190,7 +235,50 @@
 							<h2><br><br>Bar</h2>
 							<span class="image"><br><br><img src="lec7/mat 3.png" alt="" width="1000"></span>
 							<h2><br><br>Bar function has a color </h2>
-							<span class="image"><br><br><img src="lec7/color.png" alt="" width="1000"></span>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th><h2>color code</h2></th>
+											<th><h2>color</h2></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>'b'</td>
+											<td>blue</td>
+										</tr>
+										<tr>
+											<td>'g'</td>
+											<td>green</td>
+										</tr>
+										<tr>
+											<td>'r'</td>
+											<td>red</td>
+										</tr>
+										<tr>
+											<td>'c'</td>
+											<td>cyan</td>
+										</tr>
+										<tr>
+											<td>'m'</td>
+											<td>magenta</td>
+										</tr>
+										<tr>
+											<td>'y'</td>
+											<td>yellow</td>
+										</tr>
+										<tr>
+											<td>'k'</td>
+											<td>black</td>
+										</tr>
+										<tr>
+											<td>'w'</td>
+											<td>white</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 							<span class="image"><br><br><img src="lec7/mat 4.png" alt="" width="1000"></span>
 							<span class="image"><br><br><img src="lec7/out mat4.png" alt="" width="1000"></span>
 							<h2><br><br>Last, Pie</h2>
