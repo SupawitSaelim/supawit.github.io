@@ -465,9 +465,9 @@
 							<li>
 								<br>Logical operators are used to combine conditional statements:
 								<br>Operator Description Example
-								<br><em>and</em> Returns True if both statements are true
-								<br><em>or</em> Returns True if one of the statements is true
-								<br><em>not</em> Reverse the result, returns False if the result is true
+								<br><code>and</code> Returns True if both statements are true
+								<br><code>or</code> Returns True if one of the statements is true
+								<br><code>not</code> Reverse the result, returns False if the result is true
 							</li>
 							<li>
 								<span class="image"><img src="lec01/logic.png" width="450"></span>
@@ -475,31 +475,153 @@
 							</li>
 						</ul>
 						<h2><br>BITWISE OPERATORS</h2>
-						<span class="image main"><img src="lec01/BITWISE.png" alt=""></span>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)</th>
+									</tr>
+								<tbody>
+									<tr>
+										<td>OPERATORS</td>
+										<td>MEANING</td>
+										<td>EXAMPLE</td>
+									</tr>
+									<tr>
+										<td>&</td>
+										<td>Bitwise AND</td>
+										<td>x & y = 0 (0000 0000)</td>
+									</tr>
+									<tr>
+										<td>|</td>
+										<td>Bitwise OR</td>
+										<td>x | y = 14 (0000 1110)</td>
+									</tr>
+									<tr>
+										<td>^</td>
+										<td>Bitwise XOR</td>
+										<td>x ^ y = 14 (0000 1110)</td>
+									</tr>
+									<tr>
+										<td>~</td>
+										<td>Bitwise NOT</td>
+										<td>~x = -11 (1111 0101)</td>
+									</tr>
+									<tr>
+										<td>>></td>
+										<td>Bitwise right shift</td>
+										<td>x >> 2 = 2 (0000 0010)</td>
+									</tr>
+									<tr>
+										<td><<</td>
+										<td>Bitwise left shift</td>
+										<td>x << 2 = 40 (0010 1000)</td>
+								</tbody>
+							</table>
+						</div>
 						<h2><br>AISSIGNMENT OPERATORS</h2>
-						<span class="image main"><img
-								src="https://i0.wp.com/makemeanalyst.com/wp-content/uploads/2017/06/Assignment-Operator.png?resize=590%2C426"
-								alt=""></span>
+								<div class="table-wrapper">
+									<table class="alt">
+										<thead>
+											<tr>
+												<th>Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)</th>
+											</tr>
+										<tbody>
+											<tr>
+												<td>OPERATORS</td>
+												<td>EXAMPLE</td>
+												<td>EQUALS TO</td>
+											</tr>
+											<tr>
+												<td>=</td>
+												<td>x = 5</td>
+												<td>x = 5</td>
+											</tr>
+											<tr>
+												<td>+=</td>
+												<td>x += 3</td>
+												<td>x = x + 3</td>
+											</tr>
+											<tr>
+												<td>-=</td>
+												<td>x -= 3</td>
+												<td>x = x - 3</td>
+											</tr>
+											<tr>
+												<td>*=</td>
+												<td>x *= 3</td>
+												<td>x = x * 3</td>
+											</tr>
+											<tr>
+												<td>/=</td>
+												<td>x /= 3</td>
+												<td>x = x / 3</td>
+											</tr>
+											<tr>
+												<td>%=</td>
+												<td>x %= 3</td>
+												<td>x = x % 3</td>
+											</tr>
+											<tr>
+												<td>&=</td>
+												<td>x &= 3</td>
+												<td>x = x & 3</td>
+											</tr>
+											<tr>
+												<td>//=</td>
+												<td>x //= 3</td>
+												<td>x = x // 3</td>
+											</tr>
+											<tr>
+												<td>**=</td>
+												<td>x **= 3</td>
+												<td>x = x ** 3</td>
+											</tr>
+											<tr>
+												<td>|=</td>
+												<td>x |= 3</td>
+												<td>x = x | 3</td>
+											</tr>
+											<tr>
+												<td>^=</td>
+												<td>x ^= 3</td>
+												<td>x = x ^ 3</td>
+											</tr>
+											<tr>
+												<td>>>=</td>
+												<td>x >>= 3</td>
+												<td>x = x >> 3</td>
+											</tr>
+											<tr>
+												<td><<=</td>
+												<td>x <<= 3</td>
+												<td>x = x << 3</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 						<h2><br>IDENTITY OPERATORS</h2>
 						<ul class="features">
-							<li>
+							<li><br>
 								<span class="image"><img src="lec01/identity.png" width="420"></span>
 								<span class="image"><img src="lec01/output identity.png" width="420"></span>
 							</li>
 							<li>
+								<blockquote>
 								<br>Identity operators are used to compare the objects, not if they are equal,
 								<br>but if they are actually the same object, with the same memory location:
 								<br>Operator Description Example
-								<br><em>is</em> Returns True if both variables are the same object
-								<br><em>is not</em> Returns True if both variables are not the same object
+								<br><code>is</code> Returns True if both variables are the same object
+								<br><code>is not</code> Returns True if both variables are not the same object
+								</blockquote>
 							</li>
 						</ul>
 						<h2><br>MEMBERSHIP OPERATORS</h2>
 						<p>
 							<br>Membership operators are used to test if a sequence is presented in an object:
 							<br>Operator Description Example
-							<br><em>in</em> Returns True if a sequence with the specified value is present in the object
-							<br><em>not in</em> Returns True if a sequence with the specified value is not present in
+							<br><code>in</code> Returns True if a sequence with the specified value is present in the object
+							<br><code>not in</code> Returns True if a sequence with the specified value is not present in
 							the object
 						</p>
 						<ul class="features">
@@ -510,13 +632,11 @@
 								<span class="image"><img src="lec01/output member.png" width="500"></span>
 							</li>
 						</ul>
-						<span class="image"><img
-								src="https://media0.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif?cid=ecf05e472iedlivmsp5k5bcul43wfadspkm88trsxq5aub9u&rid=giphy.gif&ct=g"
-								alt="" width="250"></span>
+						<span class="image"><br><br><img src="lec01/giphy.webp" width="300"></span><br><br>
 						<br><br><br>
 						<ul class="statistics">
 							<li class="style2">
-								<h1><br>INPUT</h1>
+								<h1 style="color:whitesmoke " ><br>INPUT <img src=" lec01/5205407.png" width="60" alt=""> </h1>
 							</li>
 						</ul>
 						<ul class="features">
@@ -528,7 +648,7 @@
 								<br>Python 2.7 uses the raw_input() method.
 								<br>Example
 								<br>if we want to ask the user for a name, we can execute the following code:
-								<br>input("Enter your name: ")
+								<br><code>input("Enter your name: ")</code>
 								<br><b>input return data type is string</b>
 							</li>
 							<li>
@@ -542,26 +662,26 @@
 							By default the input function takes the input as a string.
 							But we can convert the input to other data types like int, float etc.
 							Example
-							num1 = int(input("Enter first number: "))
-							num2 = int(input("Enter second number: "))
-							sum = num1 + num2
-							print("The sum is", sum)
+							<code>num1 = int(input("Enter first number: "))</code>
+							<code>num2 = int(input("Enter second number: "))</code><br>
+							<code>sum = num1 + num2</code><br>
+							<code>print("The sum is", sum)</code>
 						</p>
 						<h3>Try</h3>
 						<span class="image medium"><img src="lec01/itput numbers.png"></span>
 						<span class="image medium"><img src="lec01/output input num.png"></span>
-						<p><br>
+						<h3 style="color:rgb(255, 100, 100)"><br>
 							READ MULTIPLE VALUES FROM KEYBOARD
-						</p>
+						</h3>
 						<span class="image"><img src="lec01/mul.png" width="450"></span>
 						<span class="image"><img src="lec01/output mul.png" width="450"></span>
 						<h2><br>FINALLY , COMMENT</h2>
+						<span class="image"><img src="lec01/13673.png" width="50"></span>
 						<p>
 							Comments can be used to explain Python code.
 							Comments can be used to make the code more readable.
 							Comments can be used to prevent execution when testing code.
-							Comments starts with a #, and Python will ignore them or starts with a triple quotes, and
-							Python will ignore them
+							Comments starts with a <code>#</code> and Python will ignore them. or starts with a triple quotes <code>"""</code>
 						</p>
 						<span class="image medium"><img src="lec01/COM.png"></span>
 						<span class="image medium"><img src="lec01/OUTCOM.png"></span>
