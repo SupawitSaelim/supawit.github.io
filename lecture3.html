@@ -31,8 +31,13 @@
 
 		<!-- Nav -->
 		<nav id="nav">
-			<ul><li><a href="#three" class="active">Lecture 3</a></li>
-				<li><a href="index.html">Home</a></li>
+			<ul><li><a href="#intro" class="active">INTRODUCTION</a></li>
+				<li><a href="#while">WHILE</a></li></li>
+				<li><a href="#for">FOR</a></li></li>
+				<li><a href="#running">CALCULATING RUNNING</a></li></li>
+				<li><a href="#sentinel">SENTINELS</a></li></li>
+				<li><a href="#inputvalid">INPUT VALIDATION LOOPS</a></li></li>
+				<li><a href="#other">OTHER</a></li></li>
 				<li><a href="#footer">Contact me</a></li>
 			</ul>
 		</nav>
@@ -40,30 +45,43 @@
 		<!-- Main -->
 		<div id="main">
 			<!--Lecture 3-->
-			<section id="three" class="main special">
+			<section id="intro" class="main special">
 				<header class="major">
 					<h2>Lecture 3</h2>
 					<p>
 						Repetition While and For loop
 					</p>
-					<span class="image main"><img
-							src="https://cdn.dribbble.com/users/891406/screenshots/2146143/media/505cd4e70a299298bf92eae900a7d6e8.gif">
-					</span>
+					<span class="image main"><img src="lec03/505cd4e70a299298bf92eae900a7d6e8.gif" > </span>
 				</header>
-				<h1>Repetition structure</h1>
-				<p>Repetition structure is used to execute a block of code multiple times. In Python, we have two types
-					of repetition structures: While and For</p>
+				<h1>Repetition structure <img src="lec03/1958738.png" width="50" alt=""> </h1>
+				<blockquote>
+					<p>Repetition structure is used to execute a block of code multiple times. In Python, we have two types
+						of repetition structures: While and For<br><strong>Indefinite Iteration</strong> : An unknown number of iterations. Ask the user to guess the lucky number. You don’t know how many attempts the user will need to guess correctly. It can be 1, 20, or maybe indefinite. In such cases, use a <code>while</code> loop.<br><strong>Finite Iterations </strong>: Fixed number of iterations. Print the multiplication table of 2. In this case, you know how many iterations you need. Here you need 10 iterations. In such a case use <code>for</code> loop.</p>
+				</blockquote>
+			</section>
+			<section id="while" class="main special">
 				<ul class="features">
 					<li>
-						<h1>WHILE</h1>
+						<h1>WHILE <img src="lec03/66934.png" width="50" alt=""> </h1>
 						<p>While loop is used to execute a block of code multiple times. The block of code will be
 							executed until the condition becomes false.</p>
+					</li>
+					<li>
 						<span class="image"><img src="lec03/while flow 1.png" width="500"></span>
 					</li>
 				</ul>
-				<span class="image main"><img
-						src="https://pynative.com/wp-content/uploads/2021/06/while-loop-in-python.png"
-						width="500"></span>
+				<span class="image main"><img src="lec03/while-loop-in-python.webp" width="500"></span>
+				<ul class="features">
+					<li>
+						<br><br><h3>When to use <code>while</code> Loop in Python</h3>
+						<blockquote>
+							Indefinite Iteration: The while loop will run as often as necessary to complete a particular task. When the user doesn’t know the number of iterations before execution, while loop is used instead of a for loop
+						</blockquote>
+					</li>
+					<li>
+						<span class="image"><img src="lec03/while-loop-flowchart.webp" width="400"></span>
+					</li>
+				</ul>
 				<h2>Example 1</h2>
 				<span class="image"><img src="lec03/while count.png" width="600"></span>
 				<span class="image"><img src="lec03/output while count.png" width="600"></span>
@@ -75,37 +93,61 @@
 				<span class="image"><img src="lec03/while if.png" width="600"></span>
 				<span class="image"><img src="lec03/while if out.png" width="600"></span>
 				<span class="image"><br><br><img src="lec03/while if io.png" width="600"></span><br><br><br><br>
+				<ul class="features">
+					<li><br><br><br>
+						<BLockquote style="color:rgb(250, 100, 100)" >
+							The loop with continuing forever if you forgot to increment counter in the above example
+						</BLockquote>
+					</li>
+					<li>
+						<span class="image"><img src="lec03/unfinite.png" width="400"></span>
+						<span class="image"><img src="lec03/outunfinite.png" width="400"></span>
+				</ul>
+			</section>
+			<section id="for" class="main special">
 				<ul class="statistics">
 					<li class="style1">
-						<h1><br>FOR</h1>
+						<h1 style="color:whitesmoke"><br>FOR <img src="lec03/3793067.png" width="70" alt=""> </h1>
 					</li>
 					<li class="style1">
-						<span class="image"><br><img
-								src="https://i.pinimg.com/originals/6b/d8/ef/6bd8ef35364c9672c7cbb4687977d3ee.gif"
-								width="200"></span>
+						<span class="image"><br><img src="lec03/6bd8ef35364c9672c7cbb4687977d3ee.gif" width="200"></span>
 					</li>
 				</ul>
 				<p>As opposed to while loops that execute until a condition is true, for loops are executed a fixed
 					number of times, you need to know how many times to repeat the code.An unknown number of times: For
 					example, Ask the user to guess the lucky number. You don’t know how many attempts the user will need
 					to guess correctly. It can be 1, 20, or maybe indefinite. In such cases, use a while loop.</p>
-				<span class="image main"><img
-						src="https://pynative.com/wp-content/uploads/2021/06/for-loop-in-python.png"></span>
+				<span class="image main"><img src="https://pynative.com/wp-content/uploads/2021/06/for-loop-in-python.png"></span>
 				<h2>Example 1</h2>
 				<span class="image"><img src="lec03/for1.png" width="600"></span>
-				<span class="image"><img src="lec03/output for1.png" width="600"></span>
-				<span class="image main"><img src="https://pynative.com/wp-content/uploads/2021/06/for-loop-range.png"
-						width="600"></span>
+				<span class="image"><img src="lec03/output for1.png" width="600"></span><br><br>
+				<blockquote><br>
+					The <code>range()</code> function returns a sequence of numbers starting from 0 (by default) if the initial limit is not specified and it increments by 1 (by default) until a final limit is reached.
+					The <code>range()</code> function is used with a loop to specify the range (how many times) the code block will be executed. Let us see with an example.
+				</blockquote>
+				<span class="image"><img src="lec03/for-loop-range.webp" width="800"></span>
 				<h2><br>Example 2</h2>
 				<span class="image"><img src="lec03/for2.png" width="600"></span>
-				<span class="image"><img src="lec03/output for2.png" width="600"></span>
+				<span class="image"><img src="lec03/output for2.png" width="600"></span><br><br><br><br>
+				<ul class="features">
+					<li>
+						<span class="image"><img src="lec03/for-loop-flowchart.webp" width="440"></span>
+					</li>
+					<li><br><br><br>
+						<blockquote>
+						The loop runs till it reaches the last element in the sequence. If it reaches the last element in the sequence, it exits the loop. otherwise, it keeps on executing the statements present under the loop’s body
+						</blockquote>
+					</li>
+				</ul>
 				<h2><br> Last Example </h2>
 				<span class="image"><img src="lec03/for3.png" width="600"></span>
 				<span class="image"><img src="lec03/output for3.png" width="600"></span>
 				<span class="image"><br><img src="lec03/for io.png" width="600"></span><br><br><br>
+			</section>
+			<section id="running" class="main special">
 				<ul class="statistics">
 					<li class="style2">
-						<h1><br>CALCULATING RUNNING TOTAL</h1>
+						<h1 style="color:whitesmoke" ><br>CALCULATING RUNNING TOTAL</h1>
 					</li>
 				</ul>
 				<p>A running total is a sum of numbers that accumulates with
@@ -118,6 +160,8 @@
 				<span class="image"><img src="lec03/cal sum.png"></span>
 				<span class="image"><img src="lec03/output cal sum.png"></span>
 				<span class="image"><br><br><img src="lec03/calcu total io.png"></span>
+			</section>
+			<section id="sentinel" class="main special">
 				<ul class="features">
 					<li>
 						<h1><br>SENTINELS</h1>
@@ -126,10 +170,13 @@
 				<p>A sentinel is a special value that signals the end of a sequence of values. For example, a sentinel
 					value of 0 could be used to indicate the end of a list of test scores. The sentinel value is not
 					included in the list of test scores.</p>
-				<span class="image"><img src="lec03/SENTINELS.png" width="800"></span><br><br>
+				<span class="image"><img src="lec03/sentinel.png" width="800"></span><br><br>
+				<span class="image"><img src="lec03/outsentinel.png" width="800"></span><br><br>
+			</section>
+			<section id="inputvalid" class="main special">
 				<ul class="statistics">
 					<li class="style3">
-						<h1><br>INPUT VALIDATION LOOPS</h1>
+						<h1 style="color:whitesmoke" ><br>INPUT VALIDATION LOOPS <img src="lec03/390973.png" width="50" alt=""> </h1>
 					</li>
 				</ul>
 				<ul class="features">
@@ -152,12 +199,12 @@
 						<span class="image"><br><img src="lec03/output validation.png" width="500"></span>
 					</li>
 				</ul>
+			</section>
+			<section id="other" class="main special">
 				<ul class="features">
 					<li class="features">
 						<h1><br>NESTED LOOPS</h1>
-						<span class="image"><img
-								src="https://cdn.dribbble.com/users/538630/screenshots/3198229/media/8cc8b71bbee805a3f785f6e36163823b.gif"
-								width="300"></span>
+						<span class="image"><img src="lec03/8cc8b71bbee805a3f785f6e36163823b.gif" width="300"></span>
 					</li>
 					<li class="features">
 						<p><br><br>A loop that is inside another loop is called a nested loop.</p>
@@ -190,7 +237,8 @@
 				</ul>
 				<footer class="major">
 					<ul class="actions special">
-						<li><a href="https://pynative.com/python-while-loop/" class="button primary" target="_blank">Learn More</a></li>
+						<li><a href="https://pynative.com/python-while-loop/" class="button primary" target="_blank">Learn More while loop</a></li>
+						<li><a href="https://pynative.com/python-for-loop/" class="button " target="_blank">Learn More for loop</a></li>
 					</ul>
 				</footer>
 			</section>
