@@ -1,4 +1,9 @@
-list_text = 'supawit sleep in class programming'.capitalize()
-print(list_text)
+def main():
+    x = 1
+    print(add(x))
 
-
+def add(y):
+    y +=2
+    return y
+    
+main()

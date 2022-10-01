@@ -28,8 +28,14 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#five" class="active">Lecture 5</a></li>
-                            <li><a href="index.html">Home</a></li>
+							<li><a href="#intro" class="active">INTRODUCTION FUNCTION</a></li>
+                            <li><a href="#passing">PASSING ARGUMENTS</a></li>
+                            <li><a href="#doc">DOCSTRINGS</a></li>
+                            <li><a href="#global">GLOBAL CONSTANTS</a></li>
+                            <li><a href="#return">VALUE-RETURNING</a></li>
+                            <li><a href="#storing">STORING FUNCTIONS IN MODULES</a></li>
+							<li><a href="#recursion">RECURSIVE FUNCTIONS</a></li>
+							<li><a href="#common">COMMON FUNCTIONS</a></li>
                             <li><a href="#footer">Contact me</a></li>
 						</ul>
 					</nav>
@@ -37,18 +43,24 @@
 				<!-- Main -->
 					<div id="main">
 						<!--Lecture 5-->
-							<section id="five" class="main special">
+							<section id="intro" class="main special">
 								<header class="major">
 									<h2>Lecture 5</h2>
 									<p>Function and Recursion<br> </p>
-									<span class="image main"><img src="https://developers.giphy.com/branch/master/static/api-512d36c09662682717108a38bbb5c57d.gif" width="300"></span>
+									<span class="image main"><img src="lec4/api-512d36c09662682717108a38bbb5c57d.gif"></span>
 								</header>
-								<h1>FUNCTION</h1>
-								<p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+								<h2>FUNCTION</h2>
+								<blockquote>
+								<p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.Function improves efficiency and reduces errors because of the reusability of a code. Once we create a function, we can call it anywhere and anytime. The benefit of using a function is reusability and modularity.</p> 
+								</blockquote>
+
 								<br><span class="image main"><img src="https://pynative.com/wp-content/uploads/2021/03/python-functions.jpg" width="700"></span>
 								<p><strong>Function name</strong> should be in lowercase and if it is more than one word then use underscore to separate them.should be not start with number or special character.can't contain space.</p>
 								<p><strong>Parameter</strong> is the value passed to the function. We can pass any number of parameters. Function body uses the parameter’s value to perform an action </p>
 								<p><strong>Function body</strong> is the block of code that performs the action. It is indented from the function header. The function body can contain any number of statements.</p> 
+								<blockquote>
+									NOTE:While defining a function, we use two keywords, <code>def</code> (mandatory) and <code>return</code> (optional). The def keyword is used to define a function. The return keyword is used to return a value from a function.
+								</blockquote>
 								<h2>Example</h2>
 								<span class="image"><img src="lec5/def.png" width="500"></span>
 								<span class="image"><img src="lec5/out def.png" width="500"></span>
@@ -59,13 +71,16 @@
 									<li>Reduces the need for duplicate code. This makes programs shorter, easier to read, and easier to update.</li>
 									<li>Divides a large program into smaller sub-programs, making it easier to debug and test.</li>
 									<li>Allows programmers to solve larger problems by combining their knowledge of several smaller problems.</li>
+								</ul>
 								<span class="image medium"><br><img src="https://i.stack.imgur.com/dqXty.png" width="500"></span>
-								<h1><br><br> ARGUMENTS TO A FUNCTION</h1>
+								<h2><br><br> ARGUMENTS TO A FUNCTION</h2>
 								<h3>LOCAL VARIABLES?</h3>
 								<p>Variables that are created inside a function belong to the local scope of that function, and can only be used inside that function.Different functions can have local variables with the same name, because local variables are only visible inside their own function.</p>
 								<span class="image"><img src="lec5/local.png" width="550"></span>
 								<span class="image"><img src="lec5/outlocal.png" width="550"></span>
-								<h1><br>PASSING ARGUMENTS</h1>
+							</section>
+							<section id="passing" class="main special">
+								<h2><br>PASSING ARGUMENTS <img src="lec4/5815725.png" width="50" alt=""> </h2>
 								<p>
 									An argument is any piece of data that is passed into a function
 									when the function is called. A parameter is a variable that receives
@@ -77,19 +92,31 @@
 								<span class="image"><img src="lec5/change.png" width="550"></span>
 								<span class="image"><img src="lec5/outchange.png" width="550"></span>
 								<span class="image"><br><img src="lec5/change2.png" width="550"></span><br><br>
+							</section>
+							<section id="doc" class="main special">
+								<h2>DOCSTRINGS <img src="lec5/281760.png" width="50" alt=""> </h2>
+								<blockquote>
+									In Python, the documentation string is also called a docstring. It is a descriptive text (like a comment) written by a programmer to let others know what block of code does.
+								</blockquote>
+								<p>
+									We write docstring in source code and define it immediately after module, class, function, or method definition.
+									It is being declared using triple single quotes <code>(''' ''')</code> or triple-double quotes <code>(""" """)</code>.<br>
+									We can access docstring using doc attribute <code>(__doc__)</code> for any object like list, tuple, dict, and user-defined function, etc.
+								</p>
+								<span class="image"><img src="lec5/testdoc.png" width="550"></span>
+								<span class="image"><img src="lec5/outtestdoc.png" width="630"></span>
+							</section>
+							<section id="global" class="main special">
 								<ul class="statistics">
 									<li class="style1">
-										<h1><br>GLOBAL,GLOBAL CONSTANTS</h1>					
+										<h2 style="color:whitesmoke" ><br>GLOBAL,GLOBAL CONSTANTS <img src="lec5/4207231.png" width="50" alt=""> </h2>					
 									</li>
 								</ul>
 								<ul class="features">
-									<li><br>
-										<br>
-										<br>
-										<br>
-										<br>
-										<br>
-										<p><br><strong>Global </strong> variables are variables that are defined outside of a function. They can be accessed inside or outside of functions.</p>
+									<li><blockquote>
+										<br><br><br><br><br><br>
+										<p><br><strong>Global </strong> variables are variables that are defined outside of a function. They can be accessed inside or outside of functions.</p><br><br><br><br><br>
+									</blockquote>
 									</li>
 									<li>
 										<span class="image"><br><img src="lec5/global.png" width="550"></span>
@@ -99,21 +126,30 @@
 								<h2>PROGRAM SIMULATES 10 TOSSES OF A COIN</h2>
 								<span class="image"><img src="lec5/simulate.png" width="550"></span>
 								<span class="image"><img src="lec5/outsimulate.png" width="550"></span>
-								<h1><br>VALUE-RETURNING FUNCTIONS</h1>
+							</section>
+							<section id="return" class="main special">
+								<h2><br>VALUE-RETURNING FUNCTIONS <img src="lec5/7205816.png" width="50" alt=""> </h2>
 								<ul class="features">
 									<li>
 										<span class="image"><br><img src="lec5/return.png" width="400"></span>
 									</li>
 									<li>
-										<p><br><strong>Value-returning functions</strong> are functions that return a value to the calling statement. The return statement is used to return a value from a function.</p>
+										<blockquote>
+											<p><br><strong>Value-returning functions</strong> are functions that return a value to the calling statement. The <code>return</code> statement is used to return a value from a function.</p>
+										</blockquote>
 									</li>
 								</ul>
-								<h2><br>Example</h2>
-								<span class="image main"><img src="lec5/discount.png" width="550"></span>
-								<span class="image main"><img src="lec5/outdiscount.png" width="550"></span><br><br>
+								<h2><br>Example1</h2>
+								<span class="image"><img src="lec5/return1.png" width="400"></span>
+								<span class="image"><img src="lec5/out return.png" width="340"></span>
+								<h2><br>Example2</h2>
+								<span class="image"><img src="lec5/discount.png" width="700"></span>
+								<span class="image"><img src="lec5/outdiscount.png" width="700"></span><br><br>
+							</section>
+							<section id="storing" class="main special">
 								<ul class="statistics">
 									<li class="style3">
-										<h1><br>STORING FUNCTIONS IN MODULES</h1>					
+										<h2 style="color:whitesmoke" ><br>STORING FUNCTIONS IN MODULES <img src="lec5/667904.png" width="50" alt=""> </h2>					
 									</li>
 								</ul>
 								<p>
@@ -127,16 +163,26 @@
 								<p><br> module</p>
 								<span class="image"><img src="lec5/1.png" width="800"></span>
 								<span class="image"><img src="lec5/2.png" width="800"></span>
-								<h1><br>RECURSIVE</h1>
+							</section>
+							<section id="recursion" class="main special">
+								<ul class="statistics">
+									<li class="style4">
+										<h2 style="color:whitesmoke" ><br>RECURSION <img src="lec5/7205816.png" width="50" alt=""> </h2>					
+									</li>
+								</ul>
 								<ul class="features">
-									<li>
-										<p><br><br><br><br><br><br><strong>Recursive</strong> functions are functions that call themselves. A recursive function must have a base case, which is a condition that causes the function to stop calling itself.</p>
+									<li><blockquote>
+										<p><br><br><br><br><br><br>A recursive function is a function that calls itself, again and again.
+											Consider, calculating the factorial of a number is a repetitive activity, in that case, we can call a function again and again, which calculates factorial.</p>
+									</blockquote>
 									</li>
 									<li>
 										<span class="image"><br><img src="lec5/recursive.png" width="550"></span>
 										<span class="image"><br><img src="lec5/outrecur.png" width="550"></span>
 									</li>
 								</ul>
+							</section>
+							<section id="common" class="main special">
 								<h1><br>COMMON FUNCTIONS</h1>
 								<ul class="features">
 									<li>
