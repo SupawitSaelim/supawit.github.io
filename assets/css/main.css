@@ -2413,6 +2413,20 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+		
+		.image.main2 {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 110%;
+		}
+				.image.main2 img {
+					width: 110%;
+				}	
+
+		.image.responsive {
+			width: 40%;
+			height: auto;
+			}
 
 /* List */
 
