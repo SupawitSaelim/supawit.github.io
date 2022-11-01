@@ -2900,21 +2900,42 @@ input, select, textarea {
 			.statistics li.style1 {
 				background-color: #efa8b0;
 			}
+			.statistics li.style1:hover {
+				background-color: #efb6bd;
+				color: black;
+			}
+
 
 			.statistics li.style2 {
 				background-color: #c79cc8;
+			}
+			.statistics li.style2:hover {
+				background-color: #eeb0ee;
+				color: black;
 			}
 
 			.statistics li.style3 {
 				background-color: #a89cc8;
 			}
+			.statistics li.style3:hover {
+				background-color: #afa5cb;
+				color: black;
+			}
 
 			.statistics li.style4 {
 				background-color: #9bb2e1;
 			}
+			.statistics li.style4:hover {
+				background-color: #b3c4e7;
+				color: black;
+			}
 
 			.statistics li.style5 {
 				background-color: #8cc9f0;
+			}
+			.statistics li.style5:hover {
+				background-color: #a8d0e9;
+				color: black;
 			}
 
 			.statistics li strong, .statistics li b {
